@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Site BookMaerker</title>
+
+
+</head>
+
+<body onload="fetchBookmark()">
+
+    <div class="container">
+        <div class="header clearfix">
+
+            <h3 class="text-muted">BOOKMARKER</h3>
+        </div>
+
+        <div class="jumbotron">
+            <h1>Book mark your favorite site</h1>
+            <form id="myForm">
+                <div>
+                    <div class="form-group">
+                        <label>SiteName</label>
+                        <input type="text" class="form-control" id="siteName" placeholder="Website Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Site URL</label>
+                        <input type="text" class="form-control" id="siteUrl" placeholder="Website URL">
+                    </div>
+                    <div class="error" id="error"></div>
+                </div>
+                <button type="submit" class="btn btn-primary">submit</button>
+            </form>
+        </div>
+
+        <div class="row marketing">
+            <div id="bookmarkResults"></div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2016 BookMarker, Inc.</p>
+        </footer>
+
+    </div>
+    <!-- /container -->
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
